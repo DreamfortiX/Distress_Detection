@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Dark theme overrides -->
+    <style name="Theme.EmotionDetection" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color for dark theme -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color for dark theme -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar for dark theme -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/dark_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- Background colors for dark theme -->
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <!-- Surface colors for dark theme -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Error color for dark theme -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/black</item>
+
+        <!-- Custom colors for dark theme -->
+        <item name="colorSurfaceVariant">@color/gray_dark</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Typography for dark theme -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Card colors for dark theme -->
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardForegroundColor">@color/white</item>
+
+        <!-- Toolbar colors for dark theme -->
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!-- Dark theme dialog -->
+    <style name="ThemeOverlay.EmotionDetection.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@color/surface</item>
+    </style>
+
+    <!-- Dark theme toolbar -->
+    <style name="ThemeOverlay.EmotionDetection.Toolbar" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+</resources>

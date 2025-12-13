@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color>
+
+    <!-- Palette for main/audio activities -->
+    <color name="primary">#6200EE</color>
+    <color name="secondary">#03DAC5</color>
+    <color name="background">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="error">#D32F2F</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="primary_light">#BB86FC</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="black_transparent">#80000000</color>
+
+    <!-- Chip background colors for text input screen -->
+    <color name="happy_chip">#FFF9C4</color>
+    <color name="sad_chip">#BBDEFB</color>
+    <color name="angry_chip">#FFCDD2</color>
+    <color name="anxious_chip">#E1BEE7</color>
+    <color name="tired_chip">#CFD8DC</color>
+    <color name="excited_chip">#FFE082</color>
+    <color name="calm_chip">#C8E6C9</color>
+    <color name="lonely_chip">#D7CCC8</color>
+    <color name="hopeful_chip">#DCEDC8</color>
+    <color name="frustrated_chip">#FFECB3</color>
+
+    <!-- Result screen specific colors -->
+    <color name="warning">#FFA000</color>
+    <color name="success">#2E7D32</color>
+    <color name="sad">#64B5F6</color>
+    <color name="happy">#FFEE58</color>
+    <color name="neutral">#BDBDBD</color>
+    <color name="angry">#EF5350</color>
+    <color name="surprised">#FF9800</color>
+    <color name="calm">#4CAF50</color>
+    <color name="audio_color">#42A5F5</color>
+    <color name="video_color">#AB47BC</color>
+    <color name="image_color">#26A69A</color>
+    <color name="text_color">#EF5350</color>
+
+
+
+        <color name="primary_dark">#4F46E5</color>
+        <color name="primary_light_alpha">#80C7D2FE</color>
+        <color name="primary_alpha">#806200EE</color>
+
+        <!-- Secondary Colors -->
+        <color name="secondary_dark">#DB2777</color>
+        <color name="secondary_light">#FBCFE8</color>
+
+        <!-- Background Colors -->
+        <color name="light_background">#F8FAFC</color>
+        <color name="dark_background">#0F172A</color>
+
+        <!-- Text Colors -->
+        <color name="text_tertiary">#94A3B8</color>
+
+        <!-- UI Colors -->
+        <color name="white_alpha">#80FFFFFF</color>
+        <color name="gray_light">#E2E8F0</color>
+        <color name="gray_medium">#CBD5E1</color>
+        <color name="gray_dark">#475569</color>
+
+
+        <color name="error_dark">#DC2626</color>
+        <color name="info">#3B82F6</color>
+
+    <!-- Menu Item Colors -->
+    <color name="nav_item_color">#1E293B</color>
+    <color name="nav_item_selected">#6366F1</color>
+    <color name="nav_item_selected_background">#F1F5F9</color>
+
+
+        <!-- On Colors (text/icons on colored backgrounds) -->
+        <color name="colorOnPrimary">#FFFFFF</color>
+        <color name="colorOnSecondary">#000000</color>
+        <color name="colorOnBackground">#1E293B</color>
+        <color name="colorOnSurface">#1E293B</color>
+        <color name="colorOnError">#FFFFFF</color>
+    <color name="white_alpha_80">#CCFFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
+
+    <color name="surface_variant">#F5F5F5</color>
+    <color name="outline">#79747E</color>
+    <color name="outline_light">#CAC4D0</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="info_background">#F3EDF7</color>
+</resources>

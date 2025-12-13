@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Simple crop-like icon -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M7,3v4H5V3a2,2 0 0 1 2,-2h4v2H7zM17,21h-4v-2h4v-4h2v4a2,2 0 0 1 -2,2zM7,13h2v4h4v2H9a2,2 0 0 1 -2,-2v-4zM15,7h-4V5h4a2,2 0 0 1 2,2v4h-2V7z"/>
+</vector>

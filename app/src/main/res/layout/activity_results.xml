@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Results Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion Analysis"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/playVideoButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_play"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="4dp"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/filenameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="video.mp4"
+                android:textSize="12sp"
+                android:textColor="@color/white_alpha"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/analysisDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today, 2:30 PM"
+                android:textSize="12sp"
+                android:textColor="@color/white_alpha"/>
+
+        </LinearLayout>
+
+        <!-- Primary Emotion Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/emotionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PREDICTED EMOTION"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/emotionIcon"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginEnd="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/emotionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HAPPY"
+                            android:textSize="32sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"
+                            android:layout_marginBottom="4dp"/>
+
+                        <TextView
+                            android:id="@+id/emotionIdText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID: 2"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Confidence Meter -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Confidence Score"
+                            android:textSize="14sp"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:id="@+id/confidenceText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="92%"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/confidenceProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        app:indicatorColor="@color/primary"
+                        app:trackColor="@color/gray_light"
+                        app:trackThickness="8dp"
+                        android:max="100"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- All Emotions Breakdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMOTION PROBABILITIES"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Emotion Items will be added programmatically -->
+            <LinearLayout
+                android:id="@+id/emotionListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Emotion items will be added here dynamically -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Extracted Features Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/analysisDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXTRACTED FEATURES"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Audio Features -->
+                <LinearLayout
+                    android:id="@+id/audioFeaturesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_audio_wave"
+                        android:layout_marginEnd="12dp"
+                        app:tint="@color/secondary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Audio Features"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"/>
+
+                    <TextView
+                        android:id="@+id/audioFeaturesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40 dimensions"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:background="@drawable/bg_pill"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"/>
+
+                </LinearLayout>
+
+                <!-- Video/Head Pose Features -->
+                <LinearLayout
+                    android:id="@+id/videoFeaturesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_head_pose"
+                        android:layout_marginEnd="12dp"
+                        app:tint="@color/secondary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Motion Features"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"/>
+
+                    <TextView
+                        android:id="@+id/videoFeaturesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 dimensions"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:background="@drawable/bg_pill"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"/>
+
+                </LinearLayout>
+
+                <!-- Image/Facial Features -->
+                <LinearLayout
+                    android:id="@+id/imageFeaturesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_face_embedding"
+                        android:layout_marginEnd="12dp"
+                        app:tint="@color/secondary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Facial Features"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_primary"/>
+
+                    <TextView
+                        android:id="@+id/imageFeaturesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="512 dimensions"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary"
+                        android:background="@drawable/bg_pill"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/retryButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Analyze Another"
+                app:icon="@drawable/ic_retry"
+                app:strokeColor="@color/primary"
+                app:iconTint="@color/primary"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Share Results"
+                app:icon="@drawable/ic_share"
+                app:backgroundTint="@color/secondary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

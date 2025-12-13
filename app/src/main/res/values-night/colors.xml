@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Base Colors (Inverted or Darker) -->
+        <color name="black">#000000</color>
+        <color name="white">#121212</color> <!-- Dark surface instead of pure white -->
+        <color name="colorPrimary">#BB86FC</color> <!-- Lighter purple for dark theme -->
+        <color name="colorPrimaryVariant">#3700B3</color>
+        <color name="colorSecondary">#03DAC5</color> <!-- Keep teal for dark theme -->
+
+        <!-- Main App Palette -->
+        <color name="primary">#BB86FC</color> <!-- Light purple for dark mode -->
+        <color name="secondary">#03DAC5</color>
+        <color name="background">#121212</color> <!-- Dark background -->
+        <color name="text_primary">#FFFFFF</color> <!-- White text on dark -->
+        <color name="text_secondary">#B0B0B0</color> <!-- Lighter gray for secondary text -->
+        <color name="error">#CF6679</color> <!-- Softer red for dark mode -->
+        <color name="surface">#1E1E1E</color> <!-- Dark surface color -->
+        <color name="primary_light">#D0BCFF</color> <!-- Even lighter purple -->
+        <color name="divider">#2D2D2D</color> <!-- Darker divider -->
+        <color name="black_transparent">#20000000</color> <!-- Less transparent for dark -->
+
+        <!-- Chip Colors (Darker versions for night mode) -->
+        <color name="happy_chip">#3D3427</color> <!-- Dark yellow -->
+        <color name="sad_chip">#1A3A53</color> <!-- Dark blue -->
+        <color name="angry_chip">#4A2D2E</color> <!-- Dark red -->
+        <color name="anxious_chip">#3D2B40</color> <!-- Dark purple -->
+        <color name="tired_chip">#333A3D</color> <!-- Dark gray-blue -->
+        <color name="excited_chip">#4D4326</color> <!-- Dark orange-yellow -->
+        <color name="calm_chip">#2D3E2F</color> <!-- Dark green -->
+        <color name="lonely_chip">#3D3630</color> <!-- Dark brown -->
+        <color name="hopeful_chip">#2D3A28</color> <!-- Dark green-yellow -->
+        <color name="frustrated_chip">#4D4226</color> <!-- Dark amber -->
+
+        <!-- Result Screen Emotion Colors (Dark Theme) -->
+        <color name="warning">#FFB74D</color> <!-- Softer orange -->
+        <color name="success">#66BB6A</color> <!-- Softer green -->
+        <color name="sad">#64B5F6</color> <!-- Keep blue for sad -->
+        <color name="happy">#FFD54F</color> <!-- Softer yellow -->
+        <color name="neutral">#757575</color> <!-- Medium gray -->
+        <color name="angry">#E57373</color> <!-- Softer red -->
+        <color name="surprised">#FFA726</color> <!-- Softer orange -->
+
+        <!-- Feature Colors (Darker) -->
+        <color name="audio_color">#42A5F5</color> <!-- Keep blue -->
+        <color name="video_color">#AB47BC</color> <!-- Keep purple -->
+        <color name="image_color">#26A69A</color> <!-- Keep teal -->
+        <color name="text_color">#EF5350</color> <!-- Keep red -->
+
+        <!-- Additional Colors for Dark Theme -->
+        <color name="primary_dark">#7E57C2</color> <!-- Darker purple -->
+        <color name="primary_light_alpha">#40BB86FC</color> <!-- Transparent light purple -->
+
+        <!-- Secondary Colors Dark Theme -->
+        <color name="secondary_dark">#00BFA5</color> <!-- Darker teal -->
+        <color name="secondary_light">#80CBC4</color> <!-- Lighter teal -->
+
+        <!-- Background Colors for Dark Theme -->
+        <color name="light_background">#121212</color> <!-- Dark background -->
+        <color name="dark_background">#000000</color> <!-- Pure black for darkest areas -->
+
+        <!-- Text Colors for Dark Theme -->
+        <color name="text_tertiary">#757575</color> <!-- Medium gray for tertiary text -->
+
+        <!-- UI Colors for Dark Theme -->
+        <color name="white_alpha">#20FFFFFF</color> <!-- More transparent white -->
+        <color name="gray_light">#2D2D2D</color> <!-- Dark gray -->
+        <color name="gray_medium">#424242</color> <!-- Medium gray -->
+        <color name="gray_dark">#616161</color> <!-- Light gray (darker than light theme) -->
+
+        <!-- Status Colors for Dark Theme -->
+        <color name="error_dark">#D32F2F</color> <!-- Darker red -->
+        <color name="info">#2196F3</color> <!-- Standard blue -->
+
+        <!-- Menu/Navigation Colors for Dark Theme -->
+        <color name="nav_item_color">#E0E0E0</color> <!-- Light gray for nav items -->
+        <color name="nav_item_selected">#BB86FC</color> <!-- Light purple for selected -->
+        <color name="nav_item_selected_background">#2D2D2D</color> <!-- Dark gray for selected bg -->
+
+
+</resources>

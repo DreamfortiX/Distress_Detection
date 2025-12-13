@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Filter Action -->
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <!-- Emotion Filter Group -->
+            <group
+                android:id="@+id/group_filter_emotion"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/filter_all"
+                    android:checked="true"
+                    android:title="All Emotions"/>
+
+                <item
+                    android:id="@+id/filter_happy"
+                    android:title="Happy Only"/>
+
+                <item
+                    android:id="@+id/filter_sad"
+                    android:title="Sad Only"/>
+
+                <item
+                    android:id="@+id/filter_angry"
+                    android:title="Angry Only"/>
+
+                <item
+                    android:id="@+id/filter_neutral"
+                    android:title="Neutral Only"/>
+
+                <item
+                    android:id="@+id/filter_surprised"
+                    android:title="Surprised Only"/>
+            </group>
+
+            <!-- Separator -->
+            <group android:id="@+id/group_separator">
+                <item android:title="">
+                    <menu>
+                        <item android:title=""/>
+                    </menu>
+                </item>
+            </group>
+
+            <!-- Confidence Filter Group -->
+            <group android:id="@+id/group_filter_confidence">
+                <item
+                    android:id="@+id/filter_high_confidence"
+                    android:title="@string/filter_high_confidence"/>
+
+                <item
+                    android:id="@+id/filter_medium_confidence"
+                    android:title="@string/filter_medium_confidence"/>
+
+                <item
+                    android:id="@+id/filter_low_confidence"
+                    android:title="@string/filter_low_confidence"/>
+            </group>
+
+            <!-- Custom Filter -->
+            <item
+                android:id="@+id/filter_custom"
+                android:title="Custom Filter..."/>
+
+            <!-- Clear Filter -->
+            <item
+                android:id="@+id/filter_clear"
+                android:title="Clear Filter"/>
+        </menu>
+    </item>
+
+    <!-- Sort Action -->
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_date_new"
+                    android:checked="true"
+                    android:title="Date (Newest First)"/>
+
+                <item
+                    android:id="@+id/sort_date_old"
+                    android:title="Date (Oldest First)"/>
+
+                <item
+                    android:id="@+id/sort_confidence_high"
+                    android:title="Confidence (High to Low)"/>
+
+                <item
+                    android:id="@+id/sort_confidence_low"
+                    android:title="Confidence (Low to High)"/>
+
+                <item
+                    android:id="@+id/sort_emotion_alpha"
+                    android:title="Emotion (A to Z)"/>
+            </group>
+
+            <!-- Clear Sort -->
+            <item
+                android:id="@+id/sort_clear"
+                android:title="Default Sort"/>
+        </menu>
+    </item>
+
+    <!-- Export Action -->
+    <item
+        android:id="@+id/action_export"
+        android:icon="@drawable/ic_export"
+        android:title="Export"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/export_csv"
+                android:title="Export as CSV"/>
+
+            <item
+                android:id="@+id/export_json"
+                android:title="Export as JSON"/>
+
+            <item
+                android:id="@+id/export_pdf"
+                android:title="Export as PDF"/>
+
+            <item
+                android:id="@+id/export_share"
+                android:title="Share Analysis"/>
+        </menu>
+    </item>
+
+    <!-- Search Action (Hidden in overflow menu) -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="never"/>
+
+    <!-- Refresh Action -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="Refresh"
+        app:showAsAction="never"/>
+
+    <!-- Delete All Action -->
+    <item
+        android:id="@+id/action_delete_all"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete All"
+        app:showAsAction="never"/>
+
+    <!-- Settings Action -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="History Settings"
+        app:showAsAction="never"/>
+
+</menu>

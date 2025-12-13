@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dashboard -->
+    <group android:id="@+id/nav_group_primary">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard"/>
+
+        <item
+            android:id="@+id/nav_record"
+            android:icon="@drawable/ic_video_camera"
+            android:title="Record Video"/>
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history"
+            android:title="Analysis History"/>
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_stats"
+            android:title="Statistics"/>
+
+        <item
+            android:id="@+id/nav_tutorials"
+            android:icon="@drawable/ic_tutorial"
+            android:title="Tutorials"/>
+    </group>
+
+    <!-- Settings & Account -->
+    <group
+        android:id="@+id/nav_group_secondary"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="My Profile"/>
+
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/ic_premium"
+            android:title="Upgrade to Premium"/>
+    </group>
+
+    <!-- Help & Support -->
+    <group
+        android:id="@+id/nav_group_tertiary"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="Help &amp; Support"/>
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Send Feedback"/>
+
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_star"
+            android:title="Rate App"/>
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share App"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="About"/>
+    </group>
+
+</menu>

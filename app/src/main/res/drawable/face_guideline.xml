@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="250dp"
+    android:viewportWidth="200"
+    android:viewportHeight="250">
+
+    <!-- Outer Oval (Face boundary) -->
+    <path
+        android:strokeColor="@color/secondary"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.7"
+        android:pathData="M100,125
+            a60,75 0 1,1 0.1,0
+            z"/>
+
+    <!-- Inner Oval (Face center) -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.5"
+        android:pathData="M100,125
+            a40,55 0 1,1 0.1,0
+            z"/>
+
+    <!-- Horizontal Center Line -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.3"
+        android:pathData="M30,125 L170,125"/>
+
+    <!-- Vertical Center Line -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.3"
+        android:pathData="M100,50 L100,200"/>
+
+    <!-- Left Eye Position -->
+    <path
+        android:strokeColor="@color/secondary"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.8"
+        android:pathData="M70,90
+            m-5,0
+            a5,5 0 1,0 10,0
+            a5,5 0 1,0 -10,0"/>
+
+    <!-- Right Eye Position -->
+    <path
+        android:strokeColor="@color/secondary"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.8"
+        android:pathData="M130,90
+            m-5,0
+            a5,5 0 1,0 10,0
+            a5,5 0 1,0 -10,0"/>
+
+    <!-- Mouth Position -->
+    <path
+        android:strokeColor="@color/secondary"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.8"
+        android:pathData="M100,170
+            a20,10 0 1,0 0.1,0
+            z"/>
+
+    <!-- Nose Position Indicator -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.6"
+        android:pathData="M100,120 L100,130"/>
+
+    <!-- Top Head Position -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:pathData="M80,50 L120,50"/>
+
+    <!-- Bottom Chin Position -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:pathData="M80,200 L120,200"/>
+
+    <!-- Left Ear Position -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:pathData="M30,100 L40,120"/>
+
+    <!-- Right Ear Position -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:pathData="M160,100 L170,120"/>
+
+    <!-- Alignment Dots -->
+    <path
+        android:fillColor="@color/secondary"
+        android:fillAlpha="0.6"
+        android:pathData="M100,50
+            m-2,0
+            a2,2 0 1,0 4,0
+            a2,2 0 1,0 -4,0"/>
+
+    <path
+        android:fillColor="@color/secondary"
+        android:fillAlpha="0.6"
+        android:pathData="M100,200
+            m-2,0
+            a2,2 0 1,0 4,0
+            a2,2 0 1,0 -4,0"/>
+
+    <path
+        android:fillColor="@color/secondary"
+        android:fillAlpha="0.6"
+        android:pathData="M30,125
+            m-2,0
+            a2,2 0 1,0 4,0
+            a2,2 0 1,0 -4,0"/>
+
+    <path
+        android:fillColor="@color/secondary"
+        android:fillAlpha="0.6"
+        android:pathData="M170,125
+            m-2,0
+            a2,2 0 1,0 4,0
+            a2,2 0 1,0 -4,0"/>
+
+</vector>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    
+    <!-- Menu strings for history_menu.xml -->
+    <string name="filter_high_confidence">High Confidence (&gt;80%)</string>
+    <string name="filter_medium_confidence">Medium Confidence (60-80%)</string>
+    <string name="filter_low_confidence">Low Confidence (&lt;60%)</string>
+</resources>

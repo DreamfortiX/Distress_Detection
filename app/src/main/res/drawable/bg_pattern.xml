@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background Color -->
+    <path
+        android:fillColor="@color/primary_light"
+        android:pathData="M0,0H200V200H0Z"/>
+
+    <!-- Pattern: Circles Grid -->
+    <path
+        android:fillColor="@color/white"
+        android:fillAlpha="0.1"
+        android:pathData="M50,50
+            m-20,0
+            a20,20 0 1,0 40,0
+            a20,20 0 1,0 -40,0"/>
+
+    <path
+        android:fillColor="@color/white"
+        android:fillAlpha="0.1"
+        android:pathData="M150,50
+            m-20,0
+            a20,20 0 1,0 40,0
+            a20,20 0 1,0 -40,0"/>
+
+    <path
+        android:fillColor="@color/white"
+        android:fillAlpha="0.1"
+        android:pathData="M50,150
+            m-20,0
+            a20,20 0 1,0 40,0
+            a20,20 0 1,0 -40,0"/>
+
+    <path
+        android:fillColor="@color/white"
+        android:fillAlpha="0.1"
+        android:pathData="M150,150
+            m-20,0
+            a20,20 0 1,0 40,0
+            a20,20 0 1,0 -40,0"/>
+
+    <!-- Diagonal Lines -->
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.05"
+        android:pathData="M0,0 L200,200"/>
+
+    <path
+        android:strokeColor="@color/white"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.05"
+        android:pathData="M200,0 L0,200"/>
+
+    <!-- Center Dot -->
+    <path
+        android:fillColor="@color/secondary"
+        android:fillAlpha="0.2"
+        android:pathData="M100,100
+            m-10,0
+            a10,10 0 1,0 20,0
+            a10,10 0 1,0 -20,0"/>
+
+</vector>

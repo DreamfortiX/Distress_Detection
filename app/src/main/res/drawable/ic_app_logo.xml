@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Circular background -->
+    <path
+        android:fillColor="#5A67D8"
+        android:pathData="M12,2A10,10 0,1 1 12,22A10,10 0,1 1 12,2z" />
+
+    <!-- Simple abstract "mind" shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M8,11C8,9 9.5,8 11,8C12.5,8 14,9 14,11C14,13 12.5,14 11,14C9.5,14 8,13 8,11z" />
+
+</vector>
