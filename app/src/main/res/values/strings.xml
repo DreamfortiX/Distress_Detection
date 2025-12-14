@@ -5,4 +5,5 @@
     <string name="filter_high_confidence">High Confidence (&gt;80%)</string>
     <string name="filter_medium_confidence">Medium Confidence (60-80%)</string>
     <string name="filter_low_confidence">Low Confidence (&lt;60%)</string>
+    <string name="upload_amp_analyze"><![CDATA[Upload & Analyze]]></string>
 </resources>

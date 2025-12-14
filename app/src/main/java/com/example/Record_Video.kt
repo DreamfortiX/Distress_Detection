@@ -86,7 +86,6 @@ class Record_Video : AppCompatActivity() {
         btnSelectVideo = findViewById(R.id.btnSelectVideo)
         btnUpload = findViewById(R.id.btnUpload)
         tvSelectedFile = findViewById(R.id.tvSelectedFile)
-        etDescription = findViewById(R.id.etDescription)
         tvProgress = findViewById(R.id.tvProgress)
 
         btnSelectVideo.setOnClickListener {

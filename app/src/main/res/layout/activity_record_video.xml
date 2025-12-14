@@ -220,29 +220,6 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="12dp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Add notes about this recording"
-                app:boxCornerRadiusBottomEnd="12dp"
-                app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
-                app:boxCornerRadiusTopStart="12dp"
-                app:endIconMode="clear_text"
-                app:startIconDrawable="@drawable/ic_note">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etDescription"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:inputType="textMultiLine"
-                    android:maxLines="5"
-                    android:gravity="top"
-                    android:textColor="@color/text_primary"
-                    android:hint="Example: Morning recording, feeling anxious" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Character Counter -->
             <TextView
@@ -263,7 +240,7 @@
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginTop="32dp"
-        android:text="Upload &amp; Analyze"
+        android:text="@string/upload_amp_analyze"
         android:textSize="16sp"
         android:textStyle="bold"
         app:icon="@drawable/ic_analysis"
