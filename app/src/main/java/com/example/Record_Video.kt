@@ -87,6 +87,7 @@ class Record_Video : AppCompatActivity() {
         btnUpload = findViewById(R.id.btnUpload)
         tvSelectedFile = findViewById(R.id.tvSelectedFile)
         tvProgress = findViewById(R.id.tvProgress)
+        etDescription = findViewById(R.id.etDescription)
 
         btnSelectVideo.setOnClickListener {
             selectVideo()
@@ -192,8 +193,7 @@ class Record_Video : AppCompatActivity() {
         btnUpload.isEnabled = false
         btnSelectVideo.isEnabled = false
 
-        // Get description
-        val description = etDescription.text.toString().trim()
+
 
         // Upload in background thread using Coroutines
         CoroutineScope(Dispatchers.IO).launch {
@@ -211,7 +211,7 @@ class Record_Video : AppCompatActivity() {
                     Thread.sleep(100) // Reduced from 500ms to 100ms for faster upload
                 }
 
-                val result = performUpload(selectedMediaFile, description, selectedMediaType)
+                val result = performUpload(selectedMediaFile, selectedMediaType)
 
                 withContext(Dispatchers.Main) {
                     tvProgress.text = "Processing response..."
@@ -247,7 +247,7 @@ class Record_Video : AppCompatActivity() {
         }
     }
 
-    private fun performUpload(mediaFile: File, description: String, mediaType: MediaType): Pair<Boolean, String> {
+    private fun performUpload(mediaFile: File, mediaType: MediaType): Pair<Boolean, String> {
         return try {
             // Create OkHttpClient with timeout
             val client = OkHttpClient.Builder()
@@ -264,7 +264,6 @@ class Record_Video : AppCompatActivity() {
                     mediaFile.name,
                     mediaFile.asRequestBody((if (mediaType == MediaType.IMAGE) "image/*" else "video/*".toMediaTypeOrNull()) as okhttp3.MediaType?)
                 )
-                .addFormDataPart("description", description)
                 .addFormDataPart("media_type", mediaType.name.lowercase())
                 .addFormDataPart("upload_time", System.currentTimeMillis().toString())
                 .build()
